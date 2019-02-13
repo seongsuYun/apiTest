@@ -70,7 +70,7 @@ public class TestController {
 
 		response = restTemplate.exchange(access_token_url, HttpMethod.POST, request, String.class);
 
-		System.out.println("Access Token Response ---------" + response.getBody());
+		System.out.println("Access Token Response---------" + response.getBody());
 
 		// Get the Access Token From the recieved JSON response
 		ObjectMapper mapper = new ObjectMapper();
