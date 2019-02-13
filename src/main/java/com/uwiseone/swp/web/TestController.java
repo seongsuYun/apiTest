@@ -82,7 +82,7 @@ public class TestController {
 		System.out.println(token);
 		System.out.println("===============================");
 		
-		// Use the access token for authentication
+		//Use the access token for authentication
 		HttpHeaders headers1 = new HttpHeaders();
 		headers1.add("Authorization", "Bearer " + token);
 		HttpEntity<String> entity = new HttpEntity<>(headers1);
@@ -91,5 +91,4 @@ public class TestController {
 		
 		return result;
 	}
-	
 }
